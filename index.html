@@ -6,27 +6,106 @@
     <title>জয়ন্ত বিশ্বাস | হোম</title>
     <style>
         :root {
-            --primary: #1e40af;
-            --bg: #f8fafc;
+            --primary-blue: #1e40af;
+            --bg-color: #f8fafc;
         }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); text-align: center; }
-        header { background: var(--primary); color: white; padding: 20px; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        .hero { background: white; padding: 50px; margin: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .btn { display: inline-block; margin-top: 20px; padding: 12px 25px; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--bg-color);
+            text-align: center;
+            color: #1e293b;
+        }
+
+        /* উপরের মেনু বার */
+        header {
+            background-color: var(--primary-blue);
+            padding: 1.5rem 0;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* মাঝখানের কন্টেন্ট */
+        .hero {
+            background: white;
+            padding: 50px;
+            margin: 40px auto;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        /* ছবির ডিজাইন - গোল এবং সুন্দর বর্ডার */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--primary-blue);
+            margin-bottom: 20px;
+            object-fit: cover; /* ছবি চ্যাপ্টা হবে না */
+            background-color: #f1f5f9;
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #64748b;
+        }
+
+        /* বাটনের ডিজাইন */
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+        }
     </style>
 </head>
 <body>
+
     <header>
         <nav>
             <a href="index.html">হোম</a>
             <a href="macroeconomics.html">ম্যাক্রোইকোনমিক্স</a>
         </nav>
     </header>
+    
     <div class="hero">
+        <!-- ছবির কোড নিচে দেওয়া হলো -->
+        <!-- যদি আপনার ছবির নাম profile.jpg না হয়ে অন্য কিছু হয়, তবে src="..." এর ভেতর সেটি লিখুন -->
+        <img src="profile.jpg" alt="জয়ন্ত বিশ্বাস" class="profile-pic" onerror="this.src='https://via.placeholder.com/150?text=Upload+Photo'">
+        
         <h1>স্বাগতম আমার ডিজিটাল প্রোফাইলে!</h1>
-        <p>আমি জয়ন্ত বিশ্বাস। এটি আমার তৈরি প্রথম ওয়েবসাইট।</p>
+        <p>আমি জয়ন্ত বিশ্বাস। এটি গিটহাবে আমার তৈরি প্রথম ওয়েবসাইট।</p>
+        
         <a href="macroeconomics.html" class="btn">আমার লেকচার নোট দেখুন</a>
     </div>
+
+    <footer style="margin-top: 50px; color: #94a3b8; font-size: 0.9rem;">
+        <p>&copy; ২০২৪ জয়ন্ত বিশ্বাস | আমার প্রথম ওয়েব প্রজেক্ট</p>
+    </footer>
+
 </body>
 </html>
