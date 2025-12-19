@@ -2,18 +2,176 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <title>ম্যাক্রোইকোনমিক্স নোটস</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macroeconomics - স্টাডি পোর্টাল</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; padding: 40px; background: #f0f4f8; }
-        .box { background: white; padding: 20px; border-radius: 10px; border-left: 5px solid #1e40af; }
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* সাব-পেজ হেডার */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #fbbf24;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* চ্যাপ্টার গ্রিড */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* চ্যাপ্টার কার্ড */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .chapter-num {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+
+        /* ডাউনলোড/ভিউ বাটন */
+        .btn-group {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .btn-view {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-download {
+            background: #f1f5f9;
+            color: var(--primary);
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+        }
     </style>
 </head>
 <body>
-    <a href="index.html">← হোমে ফিরে যান</a>
-    <h1>📊 Macroeconomics নোটস</h1>
-    <div class="box">
-        <h3>লেকচার ১: জিডিপি কি?</h3>
-        <p>জিডিপি হলো একটি দেশের নির্দিষ্ট সময়ের মোট উৎপাদন মূল্য।</p>
+
+    <header>
+        <a href="index.html" class="back-home">← হোম পেজে ফিরে যান</a>
+        <h1>Macroeconomics (ম্যাক্রোইকোনমিক্স)</h1>
+        <p>কোর্স কোড: MGT-302 | ৩য় বর্ষ</p>
+    </header>
+
+    <div class="container">
+        <!-- চ্যাপ্টার ১ -->
+        <div class="card">
+            <span class="chapter-num">Chapter 01</span>
+            <h2>ম্যাক্রোইকোনমিক্স পরিচিতি</h2>
+            <p>সামষ্টিক অর্থনীতির সংজ্ঞা, পরিধি এবং গুরুত্ব।</p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-view">দেখুন</a>
+                <a href="#" class="btn btn-download">ডাউনলোড</a>
+            </div>
+        </div>
+
+        <!-- চ্যাপ্টার ২ -->
+        <div class="card">
+            <span class="chapter-num">Chapter 02</span>
+            <h2>জাতীয় আয় পরিমাপ</h2>
+            <p>GDP, GNP এবং জাতীয় আয় গণনার পদ্ধতিসমূহ।</p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-view">দেখুন</a>
+                <a href="#" class="btn btn-download">ডাউনলোড</a>
+            </div>
+        </div>
+
+        <!-- চ্যাপ্টার ৩ -->
+        <div class="card">
+            <span class="chapter-num">Chapter 03</span>
+            <h2>মুদ্রাস্ফীতি (Inflation)</h2>
+            <p>মুদ্রাস্ফীতির কারণ, প্রভাব এবং নিয়ন্ত্রণের উপায়।</p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-view">দেখুন</a>
+                <a href="#" class="btn btn-download">ডাউনলোড</a>
+            </div>
+        </div>
+
+        <!-- চ্যাপ্টার ৪ -->
+        <div class="card">
+            <span class="chapter-num">Chapter 04</span>
+            <h2>আর্থিক নীতি ও রাজস্ব নীতি</h2>
+            <p>Fiscal Policy এবং Monetary Policy এর ভূমিকা।</p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-view">দেখুন</a>
+                <a href="#" class="btn btn-download">ডাউনলোড</a>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; ২০২৫ জয়ন্ত বিশ্বাস | স্টাডি পোর্টাল</p>
+    </footer>
+
 </body>
 </html>
